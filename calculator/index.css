@@ -1,0 +1,222 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin:auto;
+    box-sizing: border-box;
+}
+
+
+header {
+    width: 100%;
+    background-color: pink;
+    margin: 0 auto; 
+    justify-content: center;
+    text-align: center;
+}
+
+.marginRemove {
+    margin-bottom: 0;
+}
+
+.index {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.indexButton{
+    margin: 1em 1em 1em 1em;
+    padding: 0.5em;
+    border: solid black 0.3em;
+    border-radius: 25px;
+}
+.indexButton:hover{
+    background-color: grey;
+    transform:scale(1.5);
+    transition-duration: 50ms;
+}
+.frame {
+    min-width: fit-content;
+    width:fit-content;
+    height:fit-content;
+    background-color: grey;
+    margin: auto;
+    border:rgb(255, 104, 210) 1em solid;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+    background-image: url(/calculator/pic/simpulator.PNG);
+    background-size: cover; 
+}
+
+.esio {
+    margin-top:0.5vh;
+    margin-bottom: -1vh;;
+}
+
+
+.numberInput {
+    margin: auto;
+    margin-top: 2vh;
+    transform: scale(1.5);
+    width: 20vh;
+    height:4vh;
+    border: solid black 0.5em;
+    border-radius: 12.5px;
+    text-align: right;
+    background-color:rgba(255, 255, 255, 0.603);
+}
+
+
+main {
+    background-color:black;
+    padding: 5%;
+    flex: 1;
+}
+
+footer {
+    background-color: pink;
+    margin-top: auto;
+    text-align: center;
+    position: sticky;
+    position:bottom;
+}
+
+.btnGrid {
+    display: flex;
+    display: wrap;
+    border: solid blue;
+}
+.numberGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* border: solid red 4px; */
+    width: fit-content;
+    margin:auto;
+    margin-top: 2vh;
+}
+
+
+
+.numbers {
+    background-color: rgba(255, 192, 203, 0.445);
+    height: 5vh;
+    width: 5vh;
+    margin: 0.5vh;
+    margin-top: 1vh;
+    border: solid black 0.4em;
+    border-radius: 25px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 5vh;
+    font-size: 1.5rem;  
+}
+
+.numbers:hover {
+    background-color: rgba(255, 104, 210, 0.596);
+    transform: scale(1.4);
+}
+
+.numbers:active {
+    transform:scale(1);
+}
+
+.rightBtn {
+    background-color: rgba(255, 192, 203, 0.589);
+    height: 5vh;
+    margin: 0.5vh;
+    margin-top: 1vh;
+    margin-right: 0vh;
+    margin-left: 0.9vh;
+    border: solid black 0.4em;
+    border-radius: 25px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 5vh;
+    font-size: 1.5rem;
+    width: 4vh;
+}
+
+.rightBtn:hover {
+    background-color: cornflowerblue;
+    transform: scale(1.4);
+}
+
+.rightBtn:active {
+    transform:scale(1);
+}
+
+.bottomBtn {
+    background-color: rgba(255, 192, 203, 0.678);
+    height: 5vh;
+    margin: 0.5vh;
+    margin-top: 1vh;
+    border: solid black 0.4em;
+    border-radius: 25px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 5vh;
+    font-size: 1.5rem;
+    height:4vh;
+    margin-top: 2vh;
+}
+
+.bottomBtn:hover {
+    background-color: cornflowerblue;
+    transform: scale(1.4);
+}
+
+.bottomBtn:active {
+    transform:scale(1);
+}
+    
+.clearBtn {
+    background-color: rgba(255, 192, 203, 0.555);
+    height: 10vh;
+    width: 20vh;
+    margin: 0.5vh;
+    border: solid black 0.4em;
+    border-radius: 25px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.5rem;
+    height:5vh;
+    margin-top: 2vh;
+}
+
+.clearBtn:hover {
+    background-color: cornflowerblue;
+    transform: scale(1.4);
+}
+
+.clearBtn:active {
+    transform:scale(1);
+}
+
+.donateBtn {
+    background-color: rgba(255, 192, 203, 0.678);
+    height: 5vh;
+    margin: 0.5vh;
+    margin-left: 3.4vh;
+    border: solid black 0.4em;
+    border-radius: 25px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 5vh;
+    font-size: 1.5rem;
+    width: 6vh;
+}
+
+.donateBtn:hover {
+    background-color: cornflowerblue;
+    transform: scale(1.4);
+}
+
+.donateBtn:active {
+    transform:scale(1);
+}
