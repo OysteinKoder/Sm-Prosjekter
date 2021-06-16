@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<!-- head starts here -->
+<head>
+<link href="style.css" rel="stylesheet">
+<audio id="rollSound"> 
+    <source src="sounds/diceThrow.mp3" type="audio/mpeg">
+    </audio>
+</head>
+<!-- head ends here -->
+<body>
+
+    <!-- header starts here -->
+    <header class="header">
+    <h1> Dice Game </h1>
+    <div class="headerGrid">
+        <button class="buttonHeader"> <a href="../index.html" class="headerLinks"> Back </a> </button>
+
+    </div>
+</header>
+<!-- header ends here -->
+
+<main>
+<div class="main">
+    <!-- rules starts here -->
+<h3> Rules </h3>
+<p> 
+<ul>
+    <li> First player to reach a total score of 21 or more wins! </li>
+    <li> The game uses a standared 6 value dice </li>
+    <li> Loosing player starts next round </li>
+</ul>
+</p>
+<!-- rules ends here -->
+
+
+<!-- game starts here -->
+<div class="dicebox">
+    <h3> 🎲 Dice Game 🎲 </h3>
+    <div class="playerScoreGrid">
+    <div id="playerOneTotalWins" class="redWins"> </div>
+    <div id="playerTwoTotalWins" class="blueWins"> </div>
+    </div>
+    <!-- Player Image Boxes Start -->
+    <div class="playerImageGrid"> 
+    <div class="playerBoxes">
+        <img src="playerOneRed.png" class="redLogo" id="redRed">
+    </div> 
+    <div class="playerBoxes">
+        <img src="playerTwoBlue.png" class="blueLogo" id="blueBlue">
+    </div>
+    </div>
+    <!-- Player image Boxes End -->
+
+<div class="playerScoreGrid">
+<div id="playerOne" class="redScore"> </div>
+<div id="playerTwo" class="blueScore"> </div>
+</div>
+</div>
+    <div id="rollValue" class="rollValue"> </div>
+<button id="roll" onclick="gameFunction(), set" class="btn"> Start Round </button>
+<button id="reset" onclick="resetScore()" class="btn"> Reset Round </button>
+<!-- <button onclick="resetScore()" class="resetBtn" id="resetBtn"> Reset </button> -->
+
+</div> 
+<!-- game ends here -->
+
+</div>  
+</main>
+<!-- footer starts here -->
+<footer> 
+    <h3 style="margin-bottom: 0em;">Contact Info:</h3>
+        <ul style="margin-top: 0em;">
+            <li>Mail: placeholder@gmail.com </li>
+            <li>Phone: + 47 55 55 55 55 </li>
+        </ul>    
+    </footer>
+    <!-- footer ends here --> 
+</body>
+<script src="index.js"> </script>
+
+</html>
